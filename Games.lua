@@ -49,7 +49,15 @@ local Config = {
     }
 }
 
+local ToggleButton = Instance.new("ImageButton")
+ToggleButton.Name = "OpenCloseIcon"
+ToggleButton.Parent = ScreenGui
+ToggleButton.Size = UDim2.new(0, 50, 0, 50)
+ToggleButton.Position = UDim2.new(0, 15, 0.5, -25)
+ToggleButton.BackgroundTransparency = 1
+ToggleButton.Image = "rbxassetid://72243650390596"
 local CustomIcons = {
+    
     ["home"] = "rbxassetid://10723407389",
     ["crosshair"] = "rbxassetid://10709818534",
     ["eye"] = "rbxassetid://10723346959",
