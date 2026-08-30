@@ -1,5 +1,5 @@
 -- =====================================================================
--- 🩸 RAGE HUB | Murder Mystery 2 | PREMIUM FULL EDITION
+-- 😺 cat hub | Murder Mystery 2 | PREMIUM FULL EDITION
 -- =====================================================================
 
 local Players         = game:GetService("Players")
@@ -137,7 +137,7 @@ end
     task.spawn(function()
         local RunService = game:GetService("RunService")
         local fpsGui = Instance.new("ScreenGui")
-        fpsGui.Name = "RageFPS"
+        fpsGui.Name = "CatFPS"
         fpsGui.ResetOnSpawn = false
         local fpsLbl = Instance.new("TextLabel", fpsGui)
         fpsLbl.BackgroundTransparency = 1
@@ -355,10 +355,10 @@ RunService.RenderStepped:Connect(function()
         
         -- CHARMS (Highlight)
         if Config.ESP.Charms then
-            local highlight = char:FindFirstChild("RAGE_CHARMS")
+            local highlight = char:FindFirstChild("CAT_CHARMS")
             if not highlight then
                 highlight = Instance.new("Highlight")
-                highlight.Name = "RAGE_CHARMS"
+                highlight.Name = "CAT_CHARMS"
                 highlight.Parent = char
                 highlight.FillTransparency = 0.5
                 highlight.OutlineTransparency = 0.1
@@ -423,14 +423,14 @@ end)
 -- =====================================================================
 -- GUI SETUP
 -- =====================================================================
-local GUI_NAME = "SLR_Premium_" .. tostring(math.random(1000, 9999))
+local GUI_NAME = "CAT JACK PROJECT" .. tostring(math.random(1000, 9999))
 -- Clean up old guis if they were injected in PlayerGui
 for _, v in pairs(GuiParent:GetChildren()) do
-    if v:IsA("ScreenGui") and v.Name:match("^SLR_Premium_") then
+    if v:IsA("ScreenGui") and v.Name:match("CAT JACK PROJECT") then
         v:Destroy()
     end
 end
-if GuiParent:FindFirstChild("RageHub_SL_v6") then GuiParent["RageHub_SL_v6"]:Destroy() end
+if GuiParent:FindFirstChild("CAT_HUB") then GuiParent["CAT_HUB"]:Destroy() end
 
 local ScreenGui = Instance.new("ScreenGui", GuiParent)
 ScreenGui.Name=GUI_NAME; ScreenGui.ResetOnSpawn=false; ScreenGui.IgnoreGuiInset=true
@@ -1131,7 +1131,7 @@ task.spawn(function()
     MainTitle.Size = UDim2.new(1, -120, 0, 32)
     MainTitle.Position = UDim2.fromOffset(108, 22)
     MainTitle.BackgroundTransparency = 1
-    MainTitle.Text = "RAGE HUB"
+    MainTitle.Text = "CAT HUB"
     MainTitle.Font = Enum.Font.GothamBlack
     MainTitle.TextSize = 26
     MainTitle.TextColor3 = C.Text
@@ -1293,4 +1293,4 @@ task.spawn(function()
     tw(Main, 0.65, { Position = originalPos })
 end)
 
-print("[RAGE HUB V3 MM2] Fully Loaded & Injected.")
+print("[CAT HUB MM2] Fully Loaded & Injected.")
