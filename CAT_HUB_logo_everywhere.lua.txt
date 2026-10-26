@@ -1,4 +1,4 @@
--- Recovered Luau source by ZeroVector
+
 local v, tbl
 
 do
@@ -8,7 +8,7 @@ do
     v = lib:MakeWindow({
         Title = "CAT HUB",
         SubTitle = "script made by catjack.gg",
-        SaveFolder = "oknaiget.json",
+        SaveFolder = "cathubblox.json",
     })
 
     v:NewMinimizer({KeyCode = Enum.KeyCode.LeftControl}):CreateMobileMinimizer({
